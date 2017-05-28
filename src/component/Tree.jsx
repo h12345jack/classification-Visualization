@@ -33,7 +33,6 @@ export default class Tree extends React.Component {
   		getRoot(classfication)
   			.then(res => {
   				const data = res.data;
-                console.log(data.details);
 
   				const origin_data = _.cloneDeep(data);
   				const option = {
