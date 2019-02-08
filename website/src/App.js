@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import './index.css';
-import ecConfig from 'echarts2/config'
 import MyLayout from './containers/Layout'
 
-import {treeChange, init_tree} from './echarts/tree'
-import {getRoot} from './api/tree'
-import _ from 'lodash'
+import './index.css';
 
 class App extends Component {
 

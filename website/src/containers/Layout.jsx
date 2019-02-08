@@ -1,11 +1,12 @@
 import React from 'react';
 import { Layout, Menu, Icon, Row, Col, Button } from 'antd';
-const { Header, Sider, Content, Footer } = Layout;
 import MdAccountBalance from 'react-icons/lib/md/account-balance'
 import {getClassName } from '../utils/util'
 import Tree from '../component/Tree'
-
 import "./layout.css"
+
+const { Header, Sider, Content, Footer } = Layout;
+
 
 export default class LayoutDemo extends React.Component {
   state = {
@@ -25,7 +26,6 @@ export default class LayoutDemo extends React.Component {
   }
 
   render() {
-    console.log(this.state.classfication, 'render father');
     return (
       <Layout>
         <Sider
@@ -35,12 +35,10 @@ export default class LayoutDemo extends React.Component {
         >
           <Row style={{height:64,padding:16}}>
             <Col span={3}>
-            <MdAccountBalance size={30} className="logo" style={{marginRight:16}}/>
+              <MdAccountBalance size={30} className="logo" style={{marginRight:36, width:50}}/>
             </Col>
             <Col>{!this.state.collapsed &&
-              
               <span className="logo-title" style={{color:'#fffcff',marginLeft: 10,fontSize:15}}>分类体系可视化</span>
-
             }
             </Col>
             
